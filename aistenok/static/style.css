@@ -1,0 +1,249 @@
+
+body {
+	font-family: 'RobotoSlab-Regular', Arial, Helvetica, sans-serif !important
+}
+
+div {
+	display: block;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.header {
+	border-bottom-color: rgb(155, 155, 155);
+	border-bottom: 0;
+	flex: none;
+	padding: 20px 0 0 0;
+}
+
+.top-header {
+	z-index: 150;
+	background-color: rgb(244, 114, 93);
+	color: rgb(255, 255, 255);
+	border-bottom-color: rgb(155, 155, 155);
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	height: 40px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+	/*background: #fbf8e4;*/
+	transition: all 0.3s;
+}
+
+.categories-title {
+	cursor: pointer;
+	margin: 0 auto;
+	padding: 0px 168px 20px 0;
+	font-size: 16px;
+	position: relative;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.header-bot {
+	display: table;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 25px 0 25px;
+	color: #262626;
+	background-color: #f2f2f2;
+}
+
+.td {
+	vertical-align: top;
+	display: table-cell;
+	width: 30%;
+}
+
+.site-contacts {
+	background: none;
+	padding: 15px 0 0 0;
+}
+
+.site-phone {
+	background: none;
+	padding: 0 0 0 31px;
+}
+
+.site-phone-number {
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.85);
+}
+
+.site-phone-number div {
+	padding: 0 3px 7px 0;
+	display: inline-block;
+}
+
+.header p {
+	margin: 0;
+}
+
+.site-name.td {
+	vertical-align: top;
+	padding-left: 5px;
+	width: 28%;
+}
+
+.site-name {
+	padding: 15px 0;
+	color: rgba(0, 0, 0, 9);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.logo {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px; 
+}
+
+.name-desc-wrap {
+	display: block;
+	text-align: center;
+	max-width: 428px;
+}
+
+.site-name a {
+	color: rgba(0, 0, 0, 0.9);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.site-description {
+	font-size: 19px;
+	padding: 5px 0 0 0;
+	color: rgba(0, 0, 0, 0.85);
+}
+
+.site-address {
+	padding: 8px 80px 0;
+}
+
+.tabs-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: table;
+}
+
+.menu-top .tabs-nav li {
+	display: table-cell;
+	width: 1%;
+	text-align: center;
+	vertical-align: top;
+}
+
+.menu-top .atbs-nav li a.active {
+	text-decoration: none;
+	background: #fff;
+	background-color: #fbd2cb;
+}
+
+.menu-top .tabs-nav li a {
+	margin: 0;
+	padding: 8px 0 16px;
+	display: block;
+	border-top: 3px solid #dbdbdb;
+	background: #f2f2f2;
+	vertical-align: top;
+}
+
+.menu-top .atbs-nav li a .tm-image {
+	width: 60px;
+	height: 60px;
+	vertical-align: middle;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
+
+.menu-top .atbs-nav li a .tm-image.hover .tm {
+	display: block;
+}
+
+.menu-top .atbs-nav li a .tm-image img {
+	vertical-align: middle;
+}
+
+a img {
+	border-color: rgba(0, 0, 0, 0.75);
+}
+
+img {
+	border: 0;
+	height: auto;
+}
+
+.menu-top .atbs-nav li a .tm-image.hover .tmh {
+	display: none;
+}
+
+.tm-title {
+	display: block;
+	margin: 0;
+	font: normal 20px 'RobotoSlab-Bold';
+	padding: 0;
+	color: #818181;
+	text-decoration: none;
+}
+
+.grid {
+	display: grid;
+}
+
+.slider-banner {
+	padding: 0;
+	margin-top: -11px;
+}
+
+.slider-banner a {
+	display: block;
+	text-decoration: none;
+}
+
+.inner {
+	padding: 1vw;
+	background: #f4725d;
+	display: flex;
+}
+
+.left-banner {
+	padding: 1vw;
+}
+
+.title {
+	font-size: 4vw;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif !important;
+	color: #fff;
+	line-height: 1;
+	font-weight: bold;	
+}	
+
+.text {
+	font-size: 2vw;
+	margin-bottom: 0.5vw;
+	color: #fff;
+}
+
+.slider-banner .inner .left-banner .text p {
+	margin: 0;
+}
+
+.flagg {
+	padding: 0.5vw 1vw;
+	font-size: 2.5vw;
+	background: #fff;
+	display: inline-block;
+	vertical-align: top;
+	color: #f4725d;
+	font-weight: bold;
+	position: relative;
+}
