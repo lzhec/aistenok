@@ -1,249 +1,369 @@
-
-body {
-	font-family: 'RobotoSlab-Regular', Arial, Helvetica, sans-serif !important
+body {	
+	font-family: 'RobotoSlab-Regular', 'sans-serif' !important;
 }
 
-div {
-	display: block;
+.site-container {
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	height: 200%;
 }
 
-* {
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-.header {
-	border-bottom-color: rgb(155, 155, 155);
+.hdr {
+	position: absolute;
 	border-bottom: 0;
-	flex: none;
-	padding: 20px 0 0 0;
+	width: 100%;
+	z-index: 1;
 }
 
-.top-header {
-	z-index: 150;
-	background-color: rgb(244, 114, 93);
-	color: rgb(255, 255, 255);
-	border-bottom-color: rgb(155, 155, 155);
-	position: fixed;
+.hdr-top {
+	position: relative;
 	left: 0;
 	top: 0;
 	right: 0;
-	height: 40px;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-	/*background: #fbf8e4;*/
-	transition: all 0.3s;
+	background-color: rgb(244, 114, 93);
+	color: rgb(255, 255, 255);
+	height: 50px;
+	z-index: 2;
 }
 
-.categories-title {
-	cursor: pointer;
-	margin: 0 auto;
-	padding: 0px 168px 20px 0;
-	font-size: 16px;
+.navbar {
+	background-color:  rgb(244, 114, 93);
+}
+
+.navbar-nav.nav-item {
+	color: rgb(255, 255, 255);
+}
+
+.dropright:hover {
+	background-color: rgb(255, 255, 255);
+}
+
+.dropdown:focus > .dropdown-menu,
+.dropdown:active > .dropdown-menu,
+.dropdown-menu:hover { 
+    display: block;
+}
+
+.dropdown-menu .second-menu-item {
 	position: relative;
-	font-weight: 500;
-	text-transform: uppercase;
+	left: 240px;
 }
 
-.header-bot {
-	display: table;
+.accordion {
+	margin-top: 12px;
+}
+
+.btn-link {
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+    padding-bottom: 16px;
+	border: none;
 	width: 100%;
-	box-sizing: border-box;
-	padding: 0 25px 0 25px;
-	color: #262626;
-	background-color: #f2f2f2;
 }
 
-.td {
-	vertical-align: top;
-	display: table-cell;
-	width: 30%;
-}
-
-.site-contacts {
-	background: none;
-	padding: 15px 0 0 0;
-}
-
-.site-phone {
-	background: none;
-	padding: 0 0 0 31px;
-}
-
-.site-phone-number {
-	font-size: 14px;
-	color: rgba(0, 0, 0, 0.85);
-}
-
-.site-phone-number div {
-	padding: 0 3px 7px 0;
-	display: inline-block;
-}
-
-.header p {
-	margin: 0;
-}
-
-.site-name.td {
-	vertical-align: top;
-	padding-left: 5px;
-	width: 28%;
-}
-
-.site-name {
-	padding: 15px 0;
-	color: rgba(0, 0, 0, 9);
+.btn-link:hover {
 	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 22px;
-	font-weight: bold;
 }
 
-.logo {
-	display: inline-block;
-	vertical-align: middle;
-	margin-right: 20px; 
-}
-
-.name-desc-wrap {
-	display: block;
-	text-align: center;
-	max-width: 428px;
-}
-
-.site-name a {
-	color: rgba(0, 0, 0, 0.9);
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 22px;
-	font-weight: bold;
-}
-
-.site-description {
-	font-size: 19px;
-	padding: 5px 0 0 0;
-	color: rgba(0, 0, 0, 0.85);
-}
-
-.site-address {
-	padding: 8px 80px 0;
-}
-
-.tabs-nav {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	display: table;
-}
-
-.menu-top .tabs-nav li {
-	display: table-cell;
-	width: 1%;
-	text-align: center;
-	vertical-align: top;
-}
-
-.menu-top .atbs-nav li a.active {
-	text-decoration: none;
-	background: #fff;
-	background-color: #fbd2cb;
-}
-
-.menu-top .tabs-nav li a {
-	margin: 0;
-	padding: 8px 0 16px;
-	display: block;
-	border-top: 3px solid #dbdbdb;
+.top-menu-tab {
 	background: #f2f2f2;
-	vertical-align: top;
 }
 
-.menu-top .atbs-nav li a .tm-image {
-	width: 60px;
-	height: 60px;
-	vertical-align: middle;
-	text-align: center;
-	display: block;
-	margin: 0 auto;
+.top-menu-tab:hover {
+	background: rgb(255, 255, 255);
+	color: rgb(244, 114, 93);
 }
 
-.menu-top .atbs-nav li a .tm-image.hover .tm {
-	display: block;
+.pills-tab {
+	padding-top: 30px;
+	margin-bottom: -32px;
 }
 
-.menu-top .atbs-nav li a .tm-image img {
-	vertical-align: middle;
+/*.nav-top-menu {
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	list-style: none;	
+}*/
+
+.nav-item-top-menu {
+	position: relative;
+	
+
+	width: 33.3333333%;
+	border-radius: 0px;
 }
 
-a img {
-	border-color: rgba(0, 0, 0, 0.75);
+.nav-pills .nav-link {
+	border-radius: 0px;
+	
 }
 
-img {
-	border: 0;
-	height: auto;
+.nav-item p {
+	margin-bottom: 0;
 }
 
-.menu-top .atbs-nav li a .tm-image.hover .tmh {
-	display: none;
+.nav-link {
+	color: rgb(105 105 105);
 }
 
-.tm-title {
-	display: block;
-	margin: 0;
-	font: normal 20px 'RobotoSlab-Bold';
-	padding: 0;
-	color: #818181;
-	text-decoration: none;
+/*.nav-link {
+	border: none;
+}*/
+
+/*.mt-image {
+	position: relative;
+	top: 0px;
+	left: 30;
+}*/
+
+.container {
+	position: absolute;
+	height: 100%;
+	width: 100%;
 }
 
-.grid {
+.center-container {
+	position: absolute;
+	left: 400px;
+	height: 100%;
+	width: 1140px;
+}
+
+#carouselExampleIndicators {
+	position: absolute;
+	top:0px;
+}
+
+.grid.center-grid {
 	display: grid;
+	position: absolute;
+	background-color: #f2f2f2;
+	top: 380px;
+	left: -5px;
+	height: 500px;
+	width: 101%;
+	text-align: center;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
-.slider-banner {
-	padding: 0;
-	margin-top: -11px;
+.center-item {
+	border: 5px solid rgb(255, 255, 255);
+	height: 100%;
 }
 
-.slider-banner a {
-	display: block;
+.block-text-line {
+	position: relative;
+	bottom: -150px;
+	height: 90px;
+	background-color: rgb(244, 114, 93);
+	color: rgb(255, 255, 255);
+	opacity: 0.9;
+}
+
+.block-text-line h3 {
+	font-weight: bold;
+}
+
+#center-item1 {
+	background-image: url(img/center-img-1.jpg);
+}
+
+#center-item2 {
+	background-image: url(img/center-img-2.jpg);
+}
+
+#center-item3 {
+	background-image: url(img/center-img-3.jpg);
+}
+
+#center-item4 {
+	background-image: url(img/center-img-4.jpg);
+}
+
+#center-item5 {
+	background-image: url(img/center-img-5.jpg);
+}
+
+#center-item6 {
+	background-image: url(img/center-img-6.jpg);
+}
+
+.non-decor:hover {
 	text-decoration: none;
 }
 
-.inner {
-	padding: 1vw;
-	background: #f4725d;
-	display: flex;
+.links-block-container {
+	position: absolute;
+	background-color: #f2f2f2;
+	top: 880px;
+	width: 100%;
+	height: 240px;
 }
 
-.left-banner {
-	padding: 1vw;
+.grid.links-block {
+	display: grid;
+	position: absolute;
+	height: 100%;
+	width: 164%;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.links-block-item {
+	border: 5px solid rgb(255, 255, 255);
+	background-repeat: no-repeat;
+}
+
+#block-sertificats {
+	background: url(img/link-sert.jpg);
+}
+
+#block-sales {
+	background: url(img/link-sale.jpg);
+}
+
+#block-vk {
+	background: url(img/link-vk.jpg);
 }
 
 .title {
-	font-size: 4vw;
-	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif !important;
-	color: #fff;
-	line-height: 1;
-	font-weight: bold;	
-}	
-
-.text {
-	font-size: 2vw;
-	margin-bottom: 0.5vw;
-	color: #fff;
-}
-
-.slider-banner .inner .left-banner .text p {
-	margin: 0;
-}
-
-.flagg {
-	padding: 0.5vw 1vw;
-	font-size: 2.5vw;
-	background: #fff;
-	display: inline-block;
-	vertical-align: top;
-	color: #f4725d;
-	font-weight: bold;
 	position: relative;
+	font-size: 45px;
+	color: rgb(255, 255, 255);
+	margin-bottom: 20px;
+	font-weight: bold;
+	text-align: left;
+	top: 10px;
+	left: 10px;
+	line-height: 1;
+	display: flex;
+}
+
+.links-block-a {
+	position: relative;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	font-size: 35px;
+	bottom: -15px;
+	left: 10px;
+}
+
+.links-block-a:hover {
+	color: rgb(255, 255, 255);
+}
+
+#links-block-a-sert {
+	position: relative;
+	top: 60px;
+}
+
+.left-container {
+	position: absolute;
+	left: 0;
+	height: 875px;
+	width: 400px;
+}
+
+.catalog-block {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.catalog {
+	font-size: 29px;
+	color: #000;
+	text-align: center;
+	padding-top: 5px;
+	background-color: rgb(244, 114, 93);
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.news-block {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.news {
+	font-size: 29px;
+	color: #000;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.right-container {
+	position: absolute;
+	left: 1540px;
+	height: 875px;
+	width: 400px;
+}
+
+/*.nav-panel {
+	position: relative;
+	height: 100%;
+	bottom: -10px;
+	z-index: 3;
+}
+
+.nav {
+	position: relative;
+	left: 10px;
+}
+
+.nav-item {
+
+}
+
+.about {
+
+}
+
+.hdr-bot {
+	position: relative;
+	display: table;
+	height: 50px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 0 0 0;
+	color: #262626
+	background-color: #f2f2f2;
+}
+
+.site-name {
+	vertical-align: top;
+	width: 35%;
+	padding-left: 5px;
+}
+
+.logo {
+	position: relative;
+	text-align: center;
+	z-index: 3;
+	bottom: 15px;
+}
+
+.menu-top {
+
+}
+
+.tabs-nav {
+	display: table;
+	margin: 50px;
+	padding: 0;
+}
+.tabs-nav li {
+	width: 1%;
+	display: table-cell;
+	vertical-align: top;
+	text-align: center;
+	z-index: 4;
+}
+
+.nav-panel  {
+	border: none;
 }

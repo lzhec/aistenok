@@ -1,25 +1,22 @@
-{%  load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
 	{% load staticfiles %}
-	<link rel="stylesheet" type="text/css" href="{% static 'js/bootstrap.js' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+	<script type="text/javascript" src="{% static 'jq/jquery-3.3.1.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}"> </script>
 	<link rel="stylesheet" href="{%  static 'style.css' %}">
 </head>
 <body>
-	<div class="wrapper">
-		<div class="wrapper-content">
-			{%  include 'header.html' %}
+	<div class="site-container">
+	{% include 'header.html' %}
 
-			{% block content %}
-			{% endblock %}
+	{% block content %}
+	{% endblock %}
 
-			{% include 'footer.html' %}
-		</div>
+	{% include 'footer.html' %}
 	</div>
-	
 </body>
 </html>
