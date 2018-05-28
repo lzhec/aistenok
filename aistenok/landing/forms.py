@@ -1,9 +1,9 @@
 from django import forms
-from .models import Subscribers 
+from .models import Subscriber
 
 class SubscriberForm (forms.ModelForm): #создаем форму
 
 	class Meta:
-		model = Subscribers #задаем модель формы из models.py 
+		model = Subscriber #задаем модель формы из models.py 
 		exclude = [" "]
 
