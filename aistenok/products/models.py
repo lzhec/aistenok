@@ -1,5 +1,7 @@
 from django.db import models
 
+# модели: товары
+
 class Product(models.Model):
 	name = models.CharField(max_length=128, blank=True, null=True, default=None)
 	description = models.TextField(blank=True, null=True, default=None)
@@ -8,11 +10,12 @@ class Product(models.Model):
 	updated = models.DateTimeField(auto_now_add=False, auto_now=True)
 
 	def __str__(self):
-		return '%s' % self.id
+		return '%s' % self.name
 
 	class Meta:
 		verbose_name = 'Товар'
 		verbose_name_plural = 'Товары'
+
 
 
 class ProductImage(models.Model):
