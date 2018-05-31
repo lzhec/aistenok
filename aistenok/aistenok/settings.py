@@ -82,7 +82,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'bd_aistenok',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'Root',
         'HOST': 'localhost',        
     }
 }
